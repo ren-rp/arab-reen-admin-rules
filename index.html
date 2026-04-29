@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="القوانين الإدارية الرسمية لسيرفر رين - REN RP. كل قوانين الإدارة، الإنذارات، الإجازات، والمحاسبات في مكان واحد.">
+<meta name="keywords" content="سيرفر رين, REN RP, قوانين الادارة, ادمن, FiveM, RP, رول بلاي">
+<meta property="og:title" content="سيرفر رين | قوانين الإدارة">
+<meta property="og:description" content="القوانين الإدارية الرسمية لسيرفر رين">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0a0f">
+<title>سيرفر رين | قوانين الإدارة</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Reem+Kufi:wght@400;500;600;700&family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ░░░░░ خلفية متحركة ░░░░░ -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+<div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<!-- ░░░░░ شاشة التحميل ░░░░░ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <span class="loader-letter">س</span>
+      <span class="loader-letter">ي</span>
+      <span class="loader-letter">ر</span>
+      <span class="loader-letter">ف</span>
+      <span class="loader-letter">ر</span>
+      <span class="loader-letter loader-space"></span>
+      <span class="loader-letter">ر</span>
+      <span class="loader-letter">ي</span>
+      <span class="loader-letter">ن</span>
+    </div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ░░░░░ زر القائمة (موبايل) ░░░░░ -->
+<button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+  <span></span><span></span><span></span>
+</button>
+
+<!-- ░░░░░ الشريط الجانبي ░░░░░ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="brand-mark">
+      <svg viewBox="0 0 60 60" fill="none">
+        <path d="M30 5 L52 18 L52 42 L30 55 L8 42 L8 18 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M30 13 L45 22 L45 38 L30 47 L15 38 L15 22 Z" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <text x="30" y="36" text-anchor="middle" font-family="Reem Kufi" font-weight="700" font-size="18" fill="currentColor">R</text>
+      </svg>
+    </div>
+    <div class="brand-text">
+      <h1 class="brand-title">سيرفر رين</h1>
+      <span class="brand-sub">إدارة · ADMIN</span>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-label">قوانين الإدارة</div>
+    <ul>
+      <li><a href="#intro" class="nav-link active"><span class="nav-num">00</span><span>المقدمة</span></a></li>
+      <li><a href="#notes" class="nav-link"><span class="nav-num">01</span><span>تنويهات مهمة</span></a></li>
+      <li><a href="#admin-rules" class="nav-link"><span class="nav-num">02</span><span>قوانين الإدارة</span></a></li>
+      <li><a href="#violations" class="nav-link"><span class="nav-num">03</span><span>المخالفات الإدارية</span></a></li>
+      <li><a href="#warnings" class="nav-link"><span class="nav-num">04</span><span>نظام الإنذارات</span></a></li>
+      <li><a href="#breaks" class="nav-link"><span class="nav-num">05</span><span>المخالفات المتكررة</span></a></li>
+      <li><a href="#vacations" class="nav-link"><span class="nav-num">06</span><span>الإجازات والاستقالات</span></a></li>
+      <li><a href="#discord" class="nav-link"><span class="nav-num">07</span><span>الإدارة بالدسكورد</span></a></li>
+      <li><a href="#external" class="nav-link"><span class="nav-num">08</span><span>السيرفرات الأخرى</span></a></li>
+      <li><a href="#citizens" class="nav-link"><span class="nav-num">09</span><span>مخالفات المواطنين</span></a></li>
+      <li><a href="#monitoring" class="nav-link"><span class="nav-num">10</span><span>المراقبة</span></a></li>
+      <li><a href="#property" class="nav-link"><span class="nav-num">11</span><span>مخالفات الملكية</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="sidebar-foot">
+    <div class="foot-status">
+      <span class="status-dot"></span>
+      <span>القوانين سارية</span>
+    </div>
+    <div class="foot-version">دليل الإدارة · 2026</div>
+  </div>
+</aside>
+
+<!-- ░░░░░ المحتوى الرئيسي ░░░░░ -->
+<main class="main">
+
+  <!-- ═══════ الهيرو ═══════ -->
+  <section class="hero" id="intro">
+    <div class="hero-meta">
+      <span class="hero-tag">⬢ سيرفر REN RP</span>
+      <span class="hero-divider"></span>
+      <span class="hero-tag">دليل الإدارة</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="title-line">قوانين</span>
+      <span class="title-line title-accent">الإدارة</span>
+      <span class="title-line">الرسمية</span>
+    </h1>
+
+    <p class="hero-desc">
+      المرجع الكامل لقوانين الإدارة في <strong>سيرفر رين</strong>. كل قانون موثّق ومنظّم، من الإنذارات إلى نظام الإجازات والاستقالات.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#admin-rules" class="btn btn-primary">
+        <span>ابدأ القراءة</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#warnings" class="btn btn-ghost">نظام الإنذارات</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num" data-count="11">0</div>
+        <div class="stat-label">قسم رئيسي</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-count="80">0</div>
+        <div class="stat-label">قانون موثّق</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-count="100">0</div>
+        <div class="stat-label" data-suffix="%">صرامة</div>
+      </div>
+    </div>
+
+    <div class="hero-warning">
+      <div class="warn-icon">⚠</div>
+      <div>
+        <strong>لا وجود للأغلاط في الإدارة.</strong>
+        ما فيه شي اسمه "سجلت دخول بالغلط" أو "طرت بالغلط". يتم التعامل حسب المخالفة مهما كانت الأعذار.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 01: تنويهات مهمة ═══════ -->
+  <section class="section" id="notes">
+    <div class="section-head">
+      <div class="section-num">01</div>
+      <div>
+        <h2 class="section-title">تنويهات مهمة</h2>
+        <p class="section-sub">قواعد أساسية يجب على كل أداري معرفتها قبل بدء عمله الإداري.</p>
+      </div>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rule"><div class="rule-num">01</div><p>في حال تسجيل دخولك وعدم قبولك للتكتات، يعرضك للإنذار.</p></article>
+      <article class="rule"><div class="rule-num">02</div><p>في حال اللعب كمواطن بدون طلب بريك، سيتم محاسبتك.</p></article>
+      <article class="rule danger"><div class="rule-num">03</div><p>الأسلوب غير اللائق <strong>يعرضك للفصل</strong>.</p></article>
+      <article class="rule"><div class="rule-num">04</div><p>تسجيل الخروج بدون طلب بريك يعرضك للمحاسبة.</p></article>
+      <article class="rule"><div class="rule-num">05</div><p>اللعب كمواطن بدون طلب بريك وتسجيل الخروج ممنوع.</p></article>
+      <article class="rule"><div class="rule-num">06</div><p>عند طلب بريك، يجب كتابة السبب للرد عليك.</p></article>
+      <article class="rule"><div class="rule-num">07</div><p>يمنع طلب بريك وقت ضغط التكتات.</p></article>
+      <article class="rule"><div class="rule-num">08</div><p>عند قبولك لتكت، يمنع الذهاب حتى إكمال التكت.</p></article>
+      <article class="rule"><div class="rule-num">09</div><p>يمنع محاسبة شخص بدون تكت. إذا شفت مخالف اطلب أدمن.</p></article>
+      <article class="rule"><div class="rule-num">10</div><p>يجب على الجميع متابعة القوانين والأنظمة لتجنب المحاسبة.</p></article>
+      <article class="rule"><div class="rule-num">11</div><p>الانتقال بدون إذن ممنوع، ويعرضك للإنذار الإداري.</p></article>
+      <article class="rule"><div class="rule-num">12</div><p>مخالفة قوانين السيرفر تعرضك للإنذار الإداري.</p></article>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 02: قوانين الإدارة الأساسية ═══════ -->
+  <section class="section" id="admin-rules">
+    <div class="section-head">
+      <div class="section-num">02</div>
+      <div>
+        <h2 class="section-title">قوانين الإدارة الأساسية</h2>
+        <p class="section-sub">القواعد الذهبية للأدمن. الالتزام بها واجب، ومخالفتها تعرضك للمحاسبة الفورية.</p>
+      </div>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rule danger"><div class="rule-num">01</div><p>أي شخص في إدارة سيرفر ثاني، <strong>راح يتم فصله</strong>.</p></article>
+      <article class="rule"><div class="rule-num">02</div><p>لا يحق للأدمن مخالفة الرول بلاي، مثل: استعمال الطيران بجانب المواطنين.</p></article>
+      <article class="rule"><div class="rule-num">03</div><p>لا يحق للأدمن الانتقال إلى أماكن أخرى بقصد اختصار الوقت.</p></article>
+      <article class="rule"><div class="rule-num">04</div><p>لا يحق للأدمن التدخل في شؤون الإدارة العليا أو مراقبتهم.</p></article>
+      <article class="rule danger"><div class="rule-num">05</div><p>لا يحق للأدمن استعمال الهاك. <strong>تصل العقوبة للباند النهائي.</strong></p></article>
+      <article class="rule"><div class="rule-num">06</div><p>لا يحق للأدمن التدخل في قضية أدمن آخر دون استئذان.</p></article>
+      <article class="rule"><div class="rule-num">07</div><p>لا يحق للأدمن تهديد أي مواطن بالحظر في أي حال من الأحوال.</p></article>
+      <article class="rule"><div class="rule-num">08</div><p>لا يحق للأدمن استعمال رتبته للتفاخر واستغلالها مع المواطنين.</p></article>
+      <article class="rule"><div class="rule-num">09</div><p>لا يحق للأدمن إنعاش أي شخص في حالة إغماء بالمهجورة.</p></article>
+      <article class="rule"><div class="rule-num">10</div><p>لا يحق للأدمن إنعاش أي شخص عن بعد. لازم تروح له تليبورت وتعرف كيف مات.</p></article>
+      <article class="rule"><div class="rule-num">11</div><p>لا يحق للأدمن سحب أي مواطن دون وجود شيء ضده مع دليل فيديو.</p></article>
+      <article class="rule"><div class="rule-num">12</div><p>يجب عليك تسجيل دخول وخروج عن طريق الجوال.</p></article>
+      <article class="rule"><div class="rule-num">13</div><p>يجب عليك تسجيل أي شخص يتم تبنيده في سجل الباند.</p></article>
+      <article class="rule"><div class="rule-num">14</div><p>يجب عليك احترام أي مواطن وأي شخص. أسلوبك هو المهم.</p></article>
+      <article class="rule"><div class="rule-num">15</div><p>يجب عليك متابعة الشات باستمرار.</p></article>
+      <article class="rule"><div class="rule-num">16</div><p>يجب عليك مساعدة أي شخص يطلبك.</p></article>
+      <article class="rule"><div class="rule-num">17</div><p>يجب عليك قبول الطلبات في أسرع وقت ممكن.</p></article>
+      <article class="rule"><div class="rule-num">18</div><p>راعِ ظروف الأشخاص — هناك أشخاص لا يملكون معلومات عن اللعب مثلك. ساعدهم.</p></article>
+      <article class="rule danger"><div class="rule-num">19</div><p>يمنع سب أو شتم أي شخص كان.</p></article>
+      <article class="rule"><div class="rule-num">20</div><p>عدم تسجيلك في سجل الحضور يعرضك للمسائلة من قبل الإدارة العليا.</p></article>
+      <article class="rule"><div class="rule-num">21</div><p>يمنع منعاً باتاً رفض مساعدة أي شخص. لو شخص شافك وقالك "يا أدمن"، ممنوع تقول "أنا مش أدمن" — لازم تساعده.</p></article>
+      <article class="rule"><div class="rule-num">22</div><p>يمنع منعاً باتاً محاسبة عسكري / مسعف / محامي / صحفي. يجب تقديم شكوى للوزراء.</p></article>
+      <article class="rule"><div class="rule-num">23</div><p>يمنع تشغيل صلاحيات الأدمن (الطيران - إظهار اللاعبين) في حال كنت تلعب بصفتك مواطن.</p></article>
+      <article class="rule"><div class="rule-num">24</div><p>يمنع تسجيل الدخول أو الخروج في مكان غير برج الأدمنية.</p></article>
+      <article class="rule"><div class="rule-num">25</div><p>يمنع على الأدمن إنعاش أي مواطن خارج المناطق غير الآمنة، حتى لو لم يقبل المسعف الطلب.</p></article>
+      <article class="rule"><div class="rule-num">26</div><p>لا يحق للأدمن الانتقال أو سحب أي أدمن آخر من الإدارة العليا دون استئذان.</p></article>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 03: المخالفات الإدارية المشددة ═══════ -->
+  <section class="section" id="violations">
+    <div class="section-head">
+      <div class="section-num">03</div>
+      <div>
+        <h2 class="section-title">مخالفات الأدمنية المشددة</h2>
+        <p class="section-sub">هذه المخالفات تعرضك للعقوبة الإدارية بشكل مشدد، وقد تصل للفصل أو الباند النهائي.</p>
+      </div>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rule danger"><div class="rule-num">01</div><p>ممنوع قبول طلبات الأدمنية وأنت ميت أو بيدك أحد.</p></article>
+      <article class="rule"><div class="rule-num">02</div><p>لا يحق للأدمن الانتقال أو سحب أي أدمن آخر من الإدارة دون استئذان.</p></article>
+      <article class="rule"><div class="rule-num">03</div><p>أي إداري ما يقبل طلبات أدمن في ضغط السيرفر، يتعرض لمحاسبة إهمال الأمور الإدارية.</p></article>
+      <article class="rule"><div class="rule-num">04</div><p>لا يحق للأدمن الانتقال لأي شخص إلا بوجود شكوى عليه.</p></article>
+      <article class="rule"><div class="rule-num">05</div><p>لا يحق للأدمن التدخل في شكوى أدمن آخر دون طلب منه.</p></article>
+      <article class="rule"><div class="rule-num">06</div><p>ممنوع استعمال الطيران بشكل عشوائي داخل المدينة، أو بعيد عن المواقع العامة ومواقع السيناريوهات.</p></article>
+      <article class="rule"><div class="rule-num">07</div><p>ممنوع منعاً باتاً استخدام الذهاب إلى نقطة البداية بشكل عشوائي ومتكرر.</p></article>
+      <article class="rule"><div class="rule-num">08</div><p>أي أدمن يشيل صاحبه ويتنقل فيه من مكان لآخر بشكل عشوائي ومتكرر، أو يقبل طلبات فيه = محاسبة.</p></article>
+      <article class="rule"><div class="rule-num">09</div><p>ممنوع أي أدمن رتب يعطي شخص رتبة وهو ما معه بالدسكورد.</p></article>
+      <article class="rule danger"><div class="rule-num">10</div><p>أي شخص يلعب سيرفر آخر أون لاين، يتحاسب إدارياً.</p></article>
+      <article class="rule"><div class="rule-num">11</div><p>مخالفة قوانين السيرفر العامة أو السيناريوهات تعرضك للمحاسبة الإدارية.</p></article>
+      <article class="rule"><div class="rule-num">12</div><p>لا يحق محاسبة المواطن إلا بوجود دليل قاطع ينهي المشكلة. أي شخص ما يشوف دليل، يتحاسب عليها.</p></article>
+      <article class="rule danger"><div class="rule-num">13</div><p>أي أدمن يجي بصفة مواطن ويخالف قدامه مواطن، ويستخدم صلاحياته كأدمن ويحاسب مواطن بدون تكت = محاسبة.</p></article>
+      <article class="rule"><div class="rule-num">14</div><p>ممنوع تنعش أي مواطن بالمناطق غير الآمنة.</p></article>
+      <article class="rule"><div class="rule-num">15</div><p>ممنوع منعاً باتاً سحب أو انتقال أو طيران لمواقع السيناريوهات أو الملكية.</p></article>
+      <article class="rule danger"><div class="rule-num">16</div><p>في حال الإداري يقوم بالتخريب، يتم محاسبته و<strong>تصل العقوبة للفصل</strong>.</p></article>
+      <article class="rule"><div class="rule-num">17</div><p>لا يحق للأدمن استعمال رتبته للتفاخر، أو استغلالها مع أو ضد المواطنين.</p></article>
+      <article class="rule"><div class="rule-num">18</div><p>أي أدمن يلعب بسيرفر ثاني، يتحاسب إدارياً.</p></article>
+      <article class="rule"><div class="rule-num">19</div><p>ممنوع محاسبة أدمن آخر أو التدخل في شؤونه. يقوم المشتكي بفتح تكت شكوى.</p></article>
+      <article class="rule"><div class="rule-num">20</div><p>ممنوع على الإداري قبول التكتات باللبس الرسمي للداخلية + الدفاع + الصحة.</p></article>
+      <article class="rule"><div class="rule-num">21</div><p>ممنوع منعاً باتاً تدخل السيرفر وأنت عندك رول إجازة إدارية. في حال دخلت، ترفع الإجازة وتدخل.</p></article>
+      <article class="rule danger"><div class="rule-num">22</div><p>أي شخص يعطي رتبة لا توجد عنده، أو يعطي نفسه رتبة لا توجد عنده، يتحاسب وقد <strong>يصل لإنزال الرتبة</strong>.</p></article>
+      <article class="rule"><div class="rule-num">23</div><p>يمنع اللعب كمواطن أو أياً كان وأنت مسجل دخول. يجب طلب بريك مع ذكر السبب.</p></article>
+      <article class="rule"><div class="rule-num">24</div><p>في حال لعبك كمواطن أو موظف وزارة أو عصابة، يجب طلب بريك وانتظار القبول قبل تسجيل الخروج.</p></article>
+      <article class="rule"><div class="rule-num">25</div><p>السجن لا يتعدى 20 شهر. إذا تبي تعطي أكثر، خذ الإذن من المسؤولين مع توضيح السبب في شات الإدارة.</p></article>
+      <article class="rule"><div class="rule-num">26</div><p>في حال تبنيد شخص وما عندك دليل، ينفك باند الشخص وينزل إنذار إداري.</p></article>
+      <article class="rule"><div class="rule-num">27</div><p>يمنع السجن على أسباب تافهة، ويجب الالتزام بأسباب السجن المعتمدة.</p></article>
+    </div>
+
+    <div class="info-box warn">
+      <p><strong>⚙ ملاحظة:</strong> هذه التعليمات قابلة للتعديل والتغيير والإضافة. يجب مراجعتها باستمرار.</p>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 04: نظام الإنذارات ═══════ -->
+  <section class="section" id="warnings">
+    <div class="section-head">
+      <div class="section-num">04</div>
+      <div>
+        <h2 class="section-title">نظام الإنذارات</h2>
+        <p class="section-sub">العقوبات الثابتة لأي مخالفة إدارية. لا تتغير ولا تشترط على مخالفة معينة.</p>
+      </div>
+    </div>
+
+    <div class="warning-cards">
+      <div class="warning-card verbal">
+        <div class="wc-badge">شفهي</div>
+        <div class="wc-icon">💬</div>
+        <h4>الإنذار الشفهي</h4>
+        <div class="wc-duration">3 أيام</div>
+        <p>تنبيه أولي قبل الإنذارات الرسمية.</p>
+      </div>
+
+      <div class="warning-card level-1">
+        <div class="wc-badge">المستوى 1</div>
+        <div class="wc-icon">⚠</div>
+        <h4>الإنذار الأول</h4>
+        <div class="wc-duration">5 أيام</div>
+        <p>إنذار رسمي يُسجّل في ملفك الإداري.</p>
+      </div>
+
+      <div class="warning-card level-2">
+        <div class="wc-badge">المستوى 2</div>
+        <div class="wc-icon">⚠</div>
+        <h4>الإنذار الثاني</h4>
+        <div class="wc-duration">7 أيام</div>
+        <p>+ سحب بوينت إضافي.</p>
+      </div>
+
+      <div class="warning-card level-3">
+        <div class="wc-badge">المستوى 3</div>
+        <div class="wc-icon">🚫</div>
+        <h4>الإنذار الثالث</h4>
+        <div class="wc-duration">10 أيام</div>
+        <p>+ إنزال رتبة. تصل العقوبة للفصل.</p>
+      </div>
+    </div>
+
+    <div class="info-box danger">
+      <h4 class="box-title">⚡ سياسة الإنذارات المتسارعة</h4>
+      <p>في حال حصولك على <strong>إنذارين في أقل من أسبوع</strong>، يتم إعطاؤك الإنذار الثالث مباشرة بسبب كثرة الإنذارات والملاحظات.</p>
+    </div>
+
+    <div class="info-box">
+      <h4 class="box-title">⚖ العقوبات الإضافية</h4>
+      <p>بالإضافة للإنذار، قد تطبَّق عقوبات مشددة حسب نوع المخالفة، يحددها المسؤولون:</p>
+      <ul class="dot-list">
+        <li>الحرمان من الجرد.</li>
+        <li>سحب البوينت.</li>
+        <li>إنزال الرتبة.</li>
+        <li>سحب رتبة الإدارة لمدة معينة.</li>
+        <li>الفصل المباشر في الحالات الجسيمة.</li>
+      </ul>
+    </div>
+
+    <div class="quote-box">
+      <p>"من اليوم ورايح، لن يتم التساهل مع أي إداري يخالف. أي تهاون بالإنذارات والمخالفات = <strong>فصل مباشر</strong>. الجميع يلتزم بالقوانين والأنظمة، وما يصير له إلا كل خير."</p>
+    </div>
+
+    <div class="info-box warn">
+      <p><strong>📌 لا وجود للأغلاط:</strong> ما فيه شي اسمه "سجلت دخول بالغلط"، "طرت بالغلط"، "سحبت على تكت بالغلط". سيتم التعامل حسب غلطك مهما كانت الأعذار.</p>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 05: المخالفات المتكررة + البريكات ═══════ -->
+  <section class="section" id="breaks">
+    <div class="section-head">
+      <div class="section-num">05</div>
+      <div>
+        <h2 class="section-title">المخالفات الإدارية المتكررة</h2>
+        <p class="section-sub">المخالفات الأكثر شيوعاً وكيفية تجنبها بالإجراءات الصحيحة.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading">الانتقال بدون إذن</h3>
+    <div class="info-box danger">
+      <p><strong>⛔ ممنوع منعاً باتاً.</strong></p>
+      <h4 class="box-title">الإجراء الصحيح:</h4>
+      <ul class="dot-list">
+        <li>عبر شات الإدارة: اكتب <code>/ac</code> ثم: <em>"إذن انتقال آيدي 2"</em>.</li>
+        <li>أو عن طريق الجوال: افتح "أدمن" ← <em>طلب انتقال</em> ← <em>إدارة الأدمنية</em> ← <em>قائمة الإدارة</em> ← <em>طلب انتقال</em>.</li>
+        <li>عند القبول، يتم سحبك مباشرة.</li>
+      </ul>
+    </div>
+
+    <h3 class="sub-heading">نظام البريكات</h3>
+    <div class="info-box">
+      <p><strong>ممنوع تسجل خروجك بدون طلب بريك.</strong></p>
+      <h4 class="box-title">الإجراء الصحيح:</h4>
+      <ul class="dot-list">
+        <li>اكتب في شات الإدارة باللعبة: <code>بريك</code> + <em>سبب البريك</em> (وزاري، عصابة، مواطن، الخ).</li>
+        <li>الحد الأقصى للبريك: <strong>20 دقيقة</strong>.</li>
+        <li>أي تأخير بعد الوقت المحدد = خصم 15 دقيقة لكل دقيقة تأخير من الجرد.</li>
+      </ul>
+      <p class="note-line">⚠ ممنوع كتابة بريك بدون سبب — سيتم تجاهله. ويحق للمانجرز رفض البريك لأي سبب.</p>
+    </div>
+
+    <h3 class="sub-heading">المخالفات المباشرة</h3>
+    <div class="rules-grid">
+      <article class="rule"><div class="rule-num">01</div><p>كتابة أي أمر إداري في الشات العام، حتى عن طريق الخطأ، يحق للمانجرز محاسبتك.</p></article>
+      <article class="rule danger"><div class="rule-num">02</div><p>يمنع إعطاء أي شخص رتبة إدارية / وزارة / عصابة وهو ما معه بالدسكورد. <strong>محاسبة فورية بسبب: إعطاء رتبة غير مستحقة.</strong></p></article>
+    </div>
+
+    <h3 class="sub-heading">تصنيف المخالفات حسب القسم</h3>
+    <div class="concept-cards">
+      <div class="concept">
+        <div class="concept-icon">🛡</div>
+        <h4>قوانين السيرفر العامة</h4>
+        <p>محاسبة من قبل أداري بالسجن + إنذار إداري بسبب: <em>مخالفة قوانين السيرفر</em>.</p>
+      </div>
+      <div class="concept">
+        <div class="concept-icon">🎬</div>
+        <h4>قوانين السيناريوهات</h4>
+        <p>محاسبة من قبل السيناريو تيم + إنذار إداري بسبب: <em>مخالفة قوانين السيناريوهات</em>.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading">أسباب السجن المعتمدة</h3>
+    <div class="info-box">
+      <p>هذه هي الأسباب الوحيدة المسموحة لكتابتها عند سجن المواطن:</p>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <div class="reason-tag">RDM</div>
+          <p>القتل العشوائي</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-tag">VDM</div>
+          <p>الصدم العشوائي</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-tag">عام</div>
+          <p>مخالف للقوانين<br><span>(لباقي المخالفات)</span></p>
+        </div>
+      </div>
+      <p class="note-line">⚠ أي سبب آخر تكتبه غير الأسباب المذكورة، راح يتم محاسبتك إدارياً. <strong>الكلام يشمل الجميع.</strong></p>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 06: الإجازات والاستقالات ═══════ -->
+  <section class="section" id="vacations">
+    <div class="section-head">
+      <div class="section-num">06</div>
+      <div>
+        <h2 class="section-title">الإجازات والاستقالات</h2>
+        <p class="section-sub">الأنظمة المتعلقة بطلب الإجازة، تقديم الاستقالة، وشروط الرجوع للإدارة.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading">نظام الإجازات</h3>
+    <div class="rules-grid">
+      <article class="rule"><div class="rule-num">01</div><p>يمنع طلب إجازة أكثر من <strong>20 يوم</strong>. في حال أكثر من هذه المدة، يتم القبول عن طريق الأدمن مانجر حسب خدمتك الإدارية.</p></article>
+      <article class="rule"><div class="rule-num">02</div><p>يمنع كثرة طلبات الإجازة لأي سبب كان.</p></article>
+      <article class="rule"><div class="rule-num">03</div><p>إذا كانت المدة أكثر من 20 يوم، يتم تقديم استقالة، ويرجع الشخص مع <strong>إنزال رتبة واحدة فقط</strong> بسبب الاضطرار.</p></article>
+      <article class="rule danger"><div class="rule-num">04</div><p>ممنوع كثرة طلب الإجازة نهائياً.</p></article>
+      <article class="rule"><div class="rule-num">05</div><p>ممنوع أخذ إجازة أكثر من 20 يوم إلا عند الأدمن مانجر، وتُعطى لأشخاص معينين حسب خدمتهم بالإدارة.</p></article>
+    </div>
+
+    <h3 class="sub-heading">نظام الاستقالات</h3>
+    <div class="resign-timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">قبل 3 أيام</div>
+        <div class="timeline-content">
+          <h5>الرجوع بنفس الرتبة</h5>
+          <p>يحق للشخص الرجوع بنفس رتبته بعد الاستقالة قبل تجاوز 3 أيام على تقديمها.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item warn">
+        <div class="timeline-time">بعد 3 أيام</div>
+        <div class="timeline-content">
+          <h5>إنزال رتبة واحدة</h5>
+          <p>عند مرور أكثر من 3 أيام، يرجع الشخص مع إنزاله رتبة واحدة عن رتبته السابقة. <em>(مثال: بادرون استقال → يرجع برتبة هيد أدمن).</em></p>
+        </div>
+      </div>
+
+      <div class="timeline-item warn">
+        <div class="timeline-time">غياب طويل</div>
+        <div class="timeline-content">
+          <h5>إنزال رتبة (غياب)</h5>
+          <p>إذا الشخص مستقيل بسبب أنه بيغيب فترة أكثر من 20 يوم ويرجع، يرجع مع إنزال رتبة.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item danger">
+        <div class="timeline-time">بعد شهر ونص</div>
+        <div class="timeline-content">
+          <h5>إنزال رتبتين</h5>
+          <p>إذا الشخص استقال ومر على استقالته أكثر من شهر ونص، يرجع مع إنزال رتبتين.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item danger">
+        <div class="timeline-time">الاستقالة المتكررة</div>
+        <div class="timeline-content">
+          <h5>قائمة البلاك لست</h5>
+          <p>عند طلبك استقالة للمرة الثانية أو أكثر، يحق للإدارة <strong>رفض رجوعك ودخولك قائمة البلاك لست</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 07: الإدارة بالدسكورد ═══════ -->
+  <section class="section" id="discord">
+    <div class="section-head">
+      <div class="section-num">07</div>
+      <div>
+        <h2 class="section-title">الإدارة بالدسكورد</h2>
+        <p class="section-sub">قواعد التواجد والاسم والتنظيم داخل سيرفر الدسكورد.</p>
+      </div>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rule danger"><div class="rule-num">01</div><p>ممنوع اللعب بسيرفر آخر وأنت مشغل قيم اكتفتي.</p></article>
+      <article class="rule"><div class="rule-num">02</div><p>يجب على الجميع وضع <strong>أون لاين</strong> بالدسكورد.</p></article>
+      <article class="rule"><div class="rule-num">03</div><p>يجب توحيد الاسم بين الدسكورد واللعبة.</p></article>
+      <article class="rule"><div class="rule-num">04</div><p>ممنوع تدخل السيرفر إلا تحط أون لاين بالدسكورد.</p></article>
+    </div>
+
+    <h3 class="sub-heading">معايير الاسم</h3>
+    <div class="info-box">
+      <h4 class="box-title">قواعد بادئة AL:</h4>
+      <ul class="dot-list">
+        <li>اختصار AL يكون بالشكل المزخرف فقط: <code>𝐀𝐋</code></li>
+        <li>ممنوع وضع أي رمز قبل <code>𝐀𝐋</code> مثل <code>!</code> أو غيره.</li>
+        <li>يجب توحيد الاسم تماماً داخل اللعبة والدسكورد.</li>
+      </ul>
+      <p class="note-line">⚠ أي مخالفة لهذا النظام تعرضك للمحاسبة المباشرة.</p>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 08: التعامل مع السيرفرات الأخرى ═══════ -->
+  <section class="section" id="external">
+    <div class="section-head">
+      <div class="section-num">08</div>
+      <div>
+        <h2 class="section-title">التعامل مع السيرفرات الأخرى</h2>
+        <p class="section-sub">سياسة صارمة ضد محاولات تسحيب الأعضاء أو الإدارة من قبل سيرفرات منافسة.</p>
+      </div>
+    </div>
+
+    <div class="info-box danger">
+      <h4 class="box-title">🛡 سياسة الحماية</h4>
+      <p>في حال وجود إدارة سيرفر تقوم بأعمال تسحيب أعضاء من سيرفر رين:</p>
+      <ul class="dot-list">
+        <li>يتم تبنيد كل إدارتهم ومسؤوليهم بشكل كامل من الدسكورد واللعبة.</li>
+        <li>أي شخص عندنا يكون في سيرفر آخر وهذا السيرفر يقوم بالتسحيب = <strong>باند نهائي من الدسكورد واللعبة</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="info-box warn">
+      <h4 class="box-title">⏱ سياسة الإداري المتبند</h4>
+      <p>في حالة إداري تبند أو استقال وراح سيرفر يسحب إداريين وتبند معهم:</p>
+      <ul class="dot-list">
+        <li>يكون معه مهلة بحد أقصى <strong>48 ساعة</strong> يرجع فيها.</li>
+        <li>بعد انتهاء هذه المهلة، <strong>ما في مجال للإعفاء</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rule danger"><div class="rule-num">01</div><p>يمنع قبول شخص بالإدارة وهو إداري بسيرفر آخر.</p></article>
+    </div>
+
+    <div class="quote-box">
+      <p><strong>تنويه للإداريين:</strong></p>
+      <p>"لا تنخذلوا بكلام سيرفرات أخرى يعطونك مزايا أو رتب أو إيديات. تأكد تماماً إنك ستُخذل وتندم. سيرفر رين هو مستقبل الفايف ام بإذن الله، فحافظ عليه. 👍🏻"</p>
+      <p>"انضمامك لعائلة سيرفر رين، أنت صرت صاحب مكان. هالمكان يعني لك الكثير وعزيز وغالي عليك، فيكون عندك أمانة وحفظ لرزق مسلم من العبث فيه. <em>(قطع الأعناق ولا قطع الأرزاق)</em>. أي شخص يحاول أن يغريك أو ينشر لك سيرفره، سارع بالتواصل مع أحد الإدارة العليا وتبليغه. شكراً لكل من تعاون."</p>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 09: مخالفات المواطنين ═══════ -->
+  <section class="section" id="citizens">
+    <div class="section-head">
+      <div class="section-num">09</div>
+      <div>
+        <h2 class="section-title">مخالفات المواطنين (Role Play)</h2>
+        <p class="section-sub">دليل المخالفات الشائعة. السجن مفتوح حسب نوع المخالفة، وقد تصل العقوبة للباند النهائي.</p>
+      </div>
+    </div>
+
+    <div class="violations-grid">
+      <div class="violation"><div class="v-num">01</div><div class="v-content"><h5>تلويت شخص داخل المنطقة الآمنة</h5><p>مخالفة جسيمة + استرجاع الممتلكات. معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">02</div><div class="v-content"><h5>الصدم العشوائي (VDM)</h5><p>معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">03</div><div class="v-content"><h5>القتل العشوائي داخل المنطقة الآمنة</h5><p>مخالفة جسيمة. معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">04</div><div class="v-content"><h5>التحدث وهو ميت</h5><p>معرّض للسجن، مع إضافة على عقوبته إذا كان مطلوباً من الشرطة. وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">05</div><div class="v-content"><h5>كلبشة شخص ميت</h5><p>معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">06</div><div class="v-content"><h5>استخدام الطائرة بالقرب من الملكية أو فيها</h5><p>معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">07</div><div class="v-content"><h5>عدم الاستجابة للخطف</h5><p>الشخص الذي لا يستجيب للخطف معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">08</div><div class="v-content"><h5>استخدام الإعلان بشكل غير لائق</h5><p>بمعنى الشرطة يهتفون. معرّض للسجن المشدد، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">09</div><div class="v-content"><h5>سرقة سيارة مسعف أو شرطي</h5><p>معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">10</div><div class="v-content"><h5>استخدام مغير الصوت بشكل مزعج وغير لائق</h5><p>معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">11</div><div class="v-content"><h5>التدخل والتطفل على موظفي الوزارات</h5><p>على رأس عملهم بغرض الاستهتار والتخريب. معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">12</div><div class="v-content"><h5>استفزاز موظفي الوزارة</h5><p>مثال: شرطي يقوم بالتحقيق وتقوم برمي الكلام عليه بغرض اللحاق وراك. معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">13</div><div class="v-content"><h5>تنزيل الشخص من السيارة + الدباب</h5><p>ممنوع منعاً باتاً. معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">14</div><div class="v-content"><h5>طلب الخضوع من الرهينة</h5><p>ممنوع منعاً باتاً. معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">15</div><div class="v-content"><h5>التحدث وهو ميت (مكرر)</h5><p>أي شخص يتكلم وهو ميت معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">16</div><div class="v-content"><h5>حمل أو كلبشة وهو راكب السيارة</h5><p>أو وهو مكلبش يركب السيارة. معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">17</div><div class="v-content"><h5>استخدام المنطقة الآمنة في وسط الفايت</h5><p>الدخول والخروج منها في حرب. معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">18</div><div class="v-content"><h5>طلب أدمن للطقطقة والاستهبال</h5><p>أي مواطن يطلب أدمن لغير سبب جدي معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">19</div><div class="v-content"><h5>تخريب السيناريو</h5><p>سواء بنك مركزي أو غيره. معرّض للسجن المشدد، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">20</div><div class="v-content"><h5>الحمل بدون إذن متكرر</h5><p>معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">21</div><div class="v-content"><h5>تلفيت من السيناريو</h5><p>معرّض للسجن المشدد، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">22</div><div class="v-content"><h5>مخالفة قوانين مابات الفايتات أو مناطق التهديد</h5><p>معرّض للسجن، وقد تصل العقوبة للباند النهائي.</p></div></div>
+      <div class="violation"><div class="v-num">23</div><div class="v-content"><h5>الهروب من العسكري بعد ذبحه للمواطن</h5><p>في حال طلب مسعف أو أدمن لإنعاشه، يجب على المواطن نسيان آخر 10 دقايق. الهروب معرّض للسجن، وقد تصل للباند النهائي.</p></div></div>
+    </div>
+
+    <div class="info-box warn">
+      <h4 class="box-title">⚕ بروتوكول الإنعاش</h4>
+      <p>في حال طلب المواطن أدمن للإنعاش، يقوم الأدمن بطلب مسعف والانتظار <strong>10 ثواني</strong> للقبول. غير ذلك، يحق للأدمن الإنعاش <strong>بالمنطقة الآمنة فقط</strong>.</p>
+    </div>
+
+    <p class="caption">المخالفات قابلة للتعديل في أي وقت.</p>
+  </section>
+
+  <!-- ═══════ القسم 10: المراقبة ═══════ -->
+  <section class="section" id="monitoring">
+    <div class="section-head">
+      <div class="section-num">10</div>
+      <div>
+        <h2 class="section-title">قوانين المراقبة</h2>
+        <p class="section-sub">الأنظمة الخاصة بفريق المراقبة وتسجيل الحضور.</p>
+      </div>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rule"><div class="rule-num">01</div><p>إجباري إضافة النجمة عند اسمك داخل اللعبة ⭐.</p></article>
+      <article class="rule"><div class="rule-num">02</div><p>تسجيل الدخول والخروج في الروم المخصص. <code>د</code> = تسجيل دخول، <code>خ</code> = تسجيل خروج.</p></article>
+      <article class="rule"><div class="rule-num">03</div><p>عند تسجيل دخولك، إجباري تكون بالتردد.</p></article>
+      <article class="rule"><div class="rule-num">04</div><p>المراقبة طيران. <strong>ممنوع أحد يفك الطيران.</strong></p></article>
+      <article class="rule"><div class="rule-num">05</div><p>لطلب البريك من الروم المخصص. الحد الأقصى <strong>20 دقيقة</strong>. أي تأخير = خصم 15 دقيقة لكل دقيقة من الجرد.</p></article>
+      <article class="rule danger"><div class="rule-num">06</div><p>أي إهمال بالمسؤولية = تحذير ثاني + حرمان من الجرد، وقد تصل للبلاك لست من المسؤولية.</p></article>
+      <article class="rule success"><div class="rule-num">07</div><p>في حال تفاعلت تفاعل قوي، تترقى إلى <strong>أدفايزر</strong>، وبعدها <strong>مسؤول رقابة</strong>.</p></article>
+      <article class="rule"><div class="rule-num">08</div><p>التصوير إجباري يكون شغال.</p></article>
+      <article class="rule"><div class="rule-num">09</div><p>في حال المواطن خالف أول مرة تحذره، الثانية تسجنه.</p></article>
+      <article class="rule"><div class="rule-num">10</div><p>الأسلوب أهم شيء. أي شخص عنده سؤال يكتبه في الشات.</p></article>
+    </div>
+  </section>
+
+  <!-- ═══════ القسم 11: مخالفات الملكية ═══════ -->
+  <section class="section" id="property">
+    <div class="section-head">
+      <div class="section-num">11</div>
+      <div>
+        <h2 class="section-title">مخالفات الملكية</h2>
+        <p class="section-sub">المخالفات داخل الملكية، والمحاسبة عليها فورية.</p>
+      </div>
+    </div>
+
+    <div class="info-box danger">
+      <p><strong>⚡ جميع المخالفات التالية يتم المحاسبة عليها فوراً، وقد تصل العقوبة للسجن المشدد:</strong></p>
+    </div>
+
+    <div class="rules-grid">
+      <article class="rule danger"><div class="rule-num">01</div><p>الحمل بدون إذن.</p></article>
+      <article class="rule danger"><div class="rule-num">02</div><p>الكلبشة بدون إذن.</p></article>
+      <article class="rule danger"><div class="rule-num">03</div><p>حمل أكثر من 2 أو كلبشة أكثر من 2.</p></article>
+      <article class="rule danger"><div class="rule-num">04</div><p>تشغيل الساوند في الملكية.</p></article>
+      <article class="rule danger"><div class="rule-num">05</div><p>تغيير الصوت في الملكية.</p></article>
+    </div>
+
+    <div class="info-box warn">
+      <p><strong>📌 ملاحظة:</strong> هذه المخالفات قابلة للتعديل في أي وقت.</p>
+    </div>
+
+    <div class="info-box">
+      <h4 class="box-title">🛡 في حال الإداري خالف</h4>
+      <p>إذا أداري قام بأي مخالفة من المخالفات السابقة:</p>
+      <ul class="dot-list">
+        <li>احفظ تصويرك فوراً.</li>
+        <li>انتقل لأقرب مسؤول ليرى المشكلة.</li>
+        <li>سيتم محاسبة الإداري حسب نظام الإنذارات والعقوبات الإدارية.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════ خاتمة ═══════ -->
+  <section class="section ending">
+    <div class="ending-card">
+      <div class="ending-mark">سيرفر رين</div>
+      <h2>كلمة أخيرة للإداريين</h2>
+      <ul class="ending-list">
+        <li><span>›</span><div>الإدارة أمانة، وكل قرار تأخذه يؤثر على تجربة لاعب.</div></li>
+        <li><span>›</span><div>الأسلوب الراقي يعكس مستواك ومستوى السيرفر.</div></li>
+        <li><span>›</span><div>التزم بالقوانين، تابعها باستمرار، ولا تتساهل مع المخالفات.</div></li>
+        <li><span>›</span><div>هذه التعليمات قابلة للتعديل — راجعها بشكل دوري.</div></li>
+      </ul>
+      <p class="ending-quote">الإدارة العليا تثق فيكم — لا تخذلوا الثقة</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <strong>سيرفر رين</strong>
+        <span>REN RP · ADMIN GUIDE</span>
+      </div>
+      <div class="footer-text">
+        © 2026 — دليل الإدارة الرسمي · كل الحقوق محفوظة
+      </div>
+      <button class="back-top" id="backTop" aria-label="العودة للأعلى">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M5 12l7-7 7 7M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
